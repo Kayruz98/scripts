@@ -40,7 +40,7 @@ $.getScript(
         await twSDK.init(scriptConfig);
 $('<style>').prop('type','text/css').html(`
   /* botão */
-  #sendToDiscord.btn-twf {
+  #sendToDiscord.btn {
     display: block;
     transition: transform 0.2s, box-shadow 0.2s;
     margin: 20px auto;
@@ -55,25 +55,17 @@ $('<style>').prop('type','text/css').html(`
     text-shadow: 0 1px 0 rgba(255,255,255,0.6);
     cursor: pointer;
   }
-  #sendToDiscord.btn-twf:active {
+  #sendToDiscord.btn:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
-  #sendToDiscord.btn-twf:hover {
+  #sendToDiscord.btn:hover {
     background: linear-gradient(to bottom, #e7d49f 0%, #c9b16f 100%);
     transform: translateY(-2px);
     border-image-width: 2;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
-  /* ícone dentro do botão: até 20×20 mas mantendo proporção 
-  #sendToDiscord.btn-twf img {
-    max-width: 36px;
-    max-height: 36px;
-    width: auto;
-    height: auto;
-    vertical-align: middle;
-    margin-right: 8px;
-  }*/
+  
 
 `).appendTo('head');
         const scriptInfo = twSDK.scriptInfo();
@@ -116,8 +108,7 @@ function buildUI() {
     );
 
     const discordButton = `
-  <button id="sendToDiscord" class="btn-twf">
-    < alt="Tribos">
+  <button id="sendToDiscord">
     Partilhar defesa disponível no ticket
   </button>
 `;
