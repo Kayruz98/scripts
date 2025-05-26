@@ -65,6 +65,14 @@ $('<style>').prop('type','text/css').html(`
     border-image-width: 2;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
+  #sendToDiscord.btn img {
+    max-width: 36px;
+    max-height: 36px;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
   
 
 `).appendTo('head');
@@ -109,6 +117,7 @@ function buildUI() {
 
     const discordButton = `
   <button id="sendToDiscord" class="btn">
+    <img src="https://prnt.sc/MHtyyhpHwXIk" alt="bT">
     Partilhar defesa disponível no ticket
   </button>
 `;
