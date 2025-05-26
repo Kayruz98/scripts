@@ -108,7 +108,7 @@ function buildUI() {
     );
 
     const discordButton = `
-  <button id="sendToDiscord">
+  <button id="sendToDiscord" class="btn">
     Partilhar defesa disponível no ticket
   </button>
 `;
