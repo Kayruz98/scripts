@@ -117,7 +117,7 @@ function buildUI() {
 
     const discordButton = `
   <button id="sendToDiscord" class="btn">
-    <img src="https://prnt.sc/MHtyyhpHwXIk" alt="bT">
+    <img src="https://i.imgur.com/QaACB8M.png" alt="bT">
     Partilhar defesa disponível no ticket
   </button>
 `;
